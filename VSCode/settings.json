@@ -96,7 +96,7 @@
                     "settings": {
                         "foreground": "#008612",
                         "fontStyle": "bold"
-                    },
+                    }
                 },
                 {
                     "scope":"string.quoted.double.include.cpp",
