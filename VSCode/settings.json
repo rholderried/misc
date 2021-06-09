@@ -1,0 +1,164 @@
+{
+    "python.pythonPath": "C:\\Users\\roman\\Anaconda3\\python.exe",
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "vscode-neovim.neovimExecutablePaths.win32": "C:\\Users\\roman\\portable_apps\\Neovim\\bin\\nvim.exe",
+    "workbench.editor.showTabs": true,
+    "sync.gist": "939951904a077b97f8001bc35f6b5948",
+    "gitlens.hovers.currentLine.over": "line",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "java.semanticHighlighting.enabled": true,
+    "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m -javaagent:\"/home/chris/.vscode-oss/extensions/gabrielbb.vscode-lombok-1.0.1/server/lombok.jar\"",
+    "workbench.list.automaticKeyboardNavigation": false,
+    "python.languageServer": "Pylance",
+    "editor.scrollbar.horizontal": "visible",
+    "editor.scrollbar.vertical": "visible",
+    "kite.showWelcomeNotificationOnStartup": false,
+    "python.terminal.activateEnvironment": false,
+    "editor.cursorBlinking": "solid",
+    "editor.fontFamily": "Consolas",
+    "editor.minimap.enabled": false,
+    "workbench.activityBar.visible": true,
+    "window.zoomLevel": 0,
+    "window.menuBarVisibility": "visible",
+    "python.dataScience.alwaysTrustNotebooks": true,
+    "python.formatting.provider": "black",
+    "python.insidersChannel": "off",
+    "gitlens.advanced.telemetry.enabled": false,
+    "gitlens.currentLine.enabled": false,
+    "emmet.showSuggestionsAsSnippets": true,
+    "gitlens.codeLens.enabled": false,
+    "git.autofetch": true,
+    "workbench.startupEditor": "newUntitledFile",
+    "python.showStartPage": false,
+    "editor.snippetSuggestions": "bottom",
+    "python.disableInstallationCheck": true,
+    "workbench.colorTheme": "Visual Studio Light - C++",
+    "workbench.colorCustomizations": {
+        "[Visual Studio Light - C++]": {
+            "panel.background": "#c3c3c3",
+            "panelTitle.activeForeground": "#ffffff",
+            "panelTitle.activeBorder": "#303030",
+            "panelTitle.inactiveForeground": "#ffffff",
+            "panel.border": "#303030",
+            // "panelSectionHeader.background": "#4b4b4b",
+            // "dropdown.background": "#4b4b4b",
+            "icon.foreground": "#ffffff",
+            "tab.hoverBackground": "#ffffff",
+            "tab.hoverForeground": "#4b4b4b",
+            "tab.unfocusedHoverBackground": "#ffffff",
+            "tab.unfocusedHoverForeground": "#4b4b4b",
+            "tab.inactiveBackground": "#c3c3c3",
+            "tab.inactiveForeground": "#4b4b4b",
+            "tab.unfocusedInactiveForeground": "#4b4b4b",
+            "tab.activeBackground": "#ffffff",
+            "tab.activeForeground": "#4b4b4b",
+            "toolbar.hoverBackground": "#ffffff",
+            "quickInput.background": "#4b4b4b",
+            "quickInput.foreground": "#ffffff",
+            "tab.border": "#303030",
+            "editorGroupHeader.tabsBackground": "#4b4b4b",
+            "editorGroup.border": "#303030",            
+            "list.inactiveSelectionBackground": "#c3c3c3",
+            "list.inactiveSelectionForeground": "#4b4b4b",
+            "list.errorForeground": "#c90700",
+            "list.warningForeground": "#c58000",
+            "list.activeSelectionBackground": "#c3c3c3",
+            "list.activeSelectionForeground": "#4b4b4b",
+            "list.hoverForeground": "#4b4b4b",
+            "list.hoverBackground": "#ffffff",
+            "menu.selectionForeground": "#ffffff",
+            "menu.selectionBackground": "#4b4b4b",
+            "menubar.selectionBackground": "#c3c3c3",
+            "titleBar.activeForeground": "#ffffff",
+            "titleBar.activeBackground": "#303030",
+            "titleBar.inactiveBackground": "#c3c3c3",
+            "titleBar.inactiveForeground": "#4b4b4b",
+            "editor.background": "#ffffff",
+            "sideBarTitle.foreground": "#ffffff",
+            "sideBar.border": "#000000",
+            "sideBar.background": "#4b4b4b",
+            "activityBar.foreground": "#e6e6e6",
+            "activityBar.activeBackground": "#303030",
+            "sideBar.foreground": "#e6e6e6ff"
+        }
+    },
+    "editor.tokenColorCustomizations": {
+        "[Visual Studio Light - C++]": {
+            "keywords": {
+                "foreground": "#0042f7"
+            },
+            "comments": "#757575",
+            "textMateRules": [
+                {
+                    "scope":"keyword.control.directive",
+                    "settings": {
+                        "foreground": "#008612",
+                        "fontStyle": "bold"
+                    },
+                },
+                {
+                    "scope":"string.quoted.double.include.cpp",
+                    "settings": {
+                        "foreground": "#000000"
+                    }
+                },
+                {
+                    "scope":"string.quoted.double.include.c",
+                    "settings": {
+                        "foreground": "#000000"
+                    }
+                },
+                {
+                    "scope":"string.quoted.other.lt-gt.include.cpp",
+                    "settings": {
+                        "foreground": "#000000"
+                    }
+                },
+                {
+                    "scope":"string.quoted.other.lt-gt.include.c",
+                    "settings": {
+                        "foreground": "#000000"
+                    }
+                },
+                {
+                    "scope":"storage.type.class.doxygen.cpp",
+                    "settings": {
+                        "foreground": "#5d8ec5"
+                    }
+                },
+                {
+                    "scope":"storage.type.class.doxygen.c",
+                    "settings": {
+                        "foreground": "#5d8ec5"
+                    }
+                },
+                {
+                    "scope":"storage.type.class.gtkdoc",
+                    "settings": {
+                        "foreground": "#5d8ec5",
+                        "fontStyle": "bold"
+                    }
+                }
+            ]
+        }
+    },
+    "editor.semanticTokenColorCustomizations": {
+        "[Visual Studio Light - C++]": {
+            "rules": {
+                "parameter":{
+                    "fontStyle": "italic",
+                    "foreground": "#000000"
+                },
+                "property": "#009419",
+                "macro": "#af04c5",
+                "enumMember": {
+                    "fontStyle": "italic",
+                    "foreground": "#000000"
+                }
+            }
+        }
+    },
+    "workbench.iconTheme": "vscode-great-icons"
+}
