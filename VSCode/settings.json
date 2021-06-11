@@ -91,6 +91,7 @@
             },
             "comments": "#757575",
             "textMateRules": [
+                // C/C++ language color customizations
                 {
                     "scope":"keyword.control.directive",
                     "settings": {
@@ -140,6 +141,59 @@
                         "foreground": "#5d8ec5",
                         "fontStyle": "bold"
                     }
+                },
+                // Python language color customizations
+                {
+                    "scope":"keyword.control.flow.python",
+                    "settings": {
+                        "foreground": "#0000ff",
+                        "fontStyle": "bold"
+                    }
+                },
+                {
+                    "scope":"string.quoted.single.python",
+                    "settings": {
+                        "foreground": "#A31515"
+                    }
+                },
+                {
+                    "scope":"variable.language.special.self.python",
+                    "settings": {
+                        "foreground": "#a7009e"
+                    }
+                },
+                {
+                    "scope":"support.function.builtin.python",
+                    "settings": {
+                        "foreground": "#038620",
+                        "fontStyle": "bold"
+                    }
+                },
+                {
+                    "scope":"support.type.exception.python",
+                    "settings": {
+                        "foreground": "#5d8ec5"
+                    }
+                },
+                {
+                    "scope":"support.function.magic.python",
+                    "settings": {
+                        "foreground": "#000000",
+                        "fontStyle": "italic"
+                    }
+                },
+                {
+                    "scope":"support.variable.magic.python",
+                    "settings": {
+                        "foreground": "#000000",
+                        "fontStyle": "italic"
+                    }
+                },
+                {
+                    "scope":"entity.name.function.decorator.python",
+                    "settings": {
+                        "foreground": "#5d8ec5"
+                    }
                 }
             ]
         }
@@ -160,5 +214,11 @@
             }
         }
     },
-    "workbench.iconTheme": "vscode-great-icons"
+    "workbench.iconTheme": "vscode-great-icons",
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ]
 }
