@@ -1,5 +1,5 @@
 {
-    "python.pythonPath": "C:\\Users\\roman\\Anaconda3\\python.exe",
+    "python.pythonPath": "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\Python36_64\\python.exe",
     "python.linting.pylintEnabled": true,
     "python.linting.enabled": true,
     "vscode-neovim.neovimExecutablePaths.win32": "C:\\Users\\roman\\portable_apps\\Neovim\\bin\\nvim.exe",
@@ -20,7 +20,7 @@
     "editor.fontFamily": "Consolas",
     "editor.minimap.enabled": false,
     "workbench.activityBar.visible": true,
-    "window.zoomLevel": 0,
+    "window.zoomLevel": -1,
     "window.menuBarVisibility": "visible",
     "python.dataScience.alwaysTrustNotebooks": true,
     "python.formatting.provider": "black",
@@ -194,7 +194,64 @@
                     "settings": {
                         "foreground": "#5d8ec5"
                     }
-                }
+                },
+                // MATLAB language color customizations
+                {
+                    "scope":"keyword.control.for.matlab",
+                    "settings": {
+                        "foreground": "#0000ff",
+                        "fontStyle": "bold"
+                    }
+                },
+                {
+                    "scope":"keyword.control.if.matlab",
+                    "settings": {
+                        "foreground": "#0000ff",
+                        "fontStyle": "bold"
+                    }
+                },
+                {
+                    "scope":"keyword.control.end.if.matlab",
+                    "settings": {
+                        "foreground": "#0000ff",
+                        "fontStyle": "bold"
+                    }
+                },
+                {
+                    "scope":"keyword.control.end.for.matlab",
+                    "settings": {
+                        "foreground": "#0000ff",
+                        "fontStyle": "bold"
+                    }
+                },
+                {
+                    "scope":"keyword.control.else.matlab",
+                    "settings": {
+                        "foreground": "#0000ff",
+                        "fontStyle": "bold"
+                    }
+                },
+                {
+                    "scope":"keyword.control.switch.matlab",
+                    "settings": {
+                        "foreground": "#0000ff",
+                        "fontStyle": "bold"
+                    }
+                },
+                {
+                    "scope":"keyword.control.case.matlab",
+                    "settings": {
+                        "foreground": "#0000ff",
+                        "fontStyle": "bold"
+                    }
+                },
+                {
+                    "scope":"keyword.control.end.switch.matlab",
+                    "settings": {
+                        "foreground": "#0000ff",
+                        "fontStyle": "bold"
+                    }
+                },
             ]
         }
     },
@@ -217,8 +274,170 @@
     "workbench.iconTheme": "vscode-great-icons",
     "workbench.editorAssociations": [
         {
-            "viewType": "jupyter.notebook.ipynb",
+            "viewType": "jupyter-notebook",
             "filenamePattern": "*.ipynb"
         }
-    ]
+    ],
+    "python.autoComplete.extraPaths": [
+    
+    ],
+    "python.analysis.extraPaths": [],
+
+    "latex-workshop.latex.recipes": [
+
+        {
+            "name": "latexmk 🔃",
+            "tools": [
+                "latexmk"
+            ]
+        },
+        {
+            "name": "pdflatex ➞ bibtex ➞ pdflatex × 2",
+            "tools": [
+                "pdflatex",
+                "bibtex",
+                "pdflatex",
+                "pdflatex"
+            ]
+        },
+        {
+            "name": "pdflatex ➞ biber ➞ pdflatex × 2",
+            "tools": [
+                "pdflatex",
+                "biber",
+                "pdflatex",
+                "pdflatex"
+            ]
+        }
+        ,
+        {
+            "name": "pdflatex",
+            "tools": [
+                "pdflatex"
+            ]
+        },
+        {
+            "name": "tiksImageSVGExport",
+            "tools": [
+                "pdflatex",
+                "pdf2svg"
+            ]
+        }
+    ],
+    
+    "latex-workshop.latex.tools": [
+
+        {
+            "name": "latexmk",
+            "command": "latexmk",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-pdf",
+                "-outdir=%OUTDIR%",
+                "%DOC%"
+            ],
+            "env": {}
+        },
+        {
+            "name": "lualatexmk",
+            "command": "latexmk",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-lualatex",
+                "-outdir=%OUTDIR%",
+                "%DOC%"
+            ],
+            "env": {}
+        },
+        {
+            "name": "latexmk_rconly",
+            "command": "latexmk",
+            "args": [
+                "%DOC%"
+            ],
+            "env": {}
+        },
+        {
+            "name": "pdflatex",
+            "command": "C:\\Users\\hold_ro\\portable_apps\\miktex_portable\\texmfs\\install\\miktex\\bin\\x64\\pdflatex.exe",
+            //"command": "pdflatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOC%"
+            ],
+            "env": {}
+        },
+        {
+            "name": "bibtex",
+            "command": "bibtex",
+            "args": [
+                "%DOCFILE%"
+            ],
+            "env": {}
+        },
+        {
+            "name": "biber",
+            "command": "C:\\Users\\hold_ro\\portable_apps\\miktex_portable\\texmfs\\install\\biber\\bin\\windows-x64\\biber.exe",
+            "args": [
+                "%DOCFILE%"
+            ],
+            "env": {}
+        },
+        {
+            "name": "rnw2tex",
+            "command": "Rscript",
+            "args": [
+                "-e",
+                "knitr::opts_knit$set(concordance = TRUE); knitr::knit('%DOCFILE_EXT%')"
+            ],
+            "env": {}
+        },
+        {
+            "name": "jnw2tex",
+            "command": "julia",
+            "args": [
+                "-e",
+                "using Weave; weave(\"%DOC_EXT%\", doctype=\"tex\")"
+            ],
+            "env": {}
+        },
+        {
+            "name": "jnw2texmintex",
+            "command": "julia",
+            "args": [
+                "-e",
+                "using Weave; weave(\"%DOC_EXT%\", doctype=\"texminted\")"
+            ],
+            "env": {}
+        },
+        {
+            "name": "tectonic",
+            "command": "tectonic",
+            "args": [
+                "--synctex",
+                "--keep-logs",
+                "%DOC%.tex"
+            ],
+            "env": {}
+        }
+        ,
+        {
+            "name": "pdf2svg",
+            "command": "pdf2svg",
+            "args": [
+                "%DOCFILE%.pdf",
+                "%DOCFILE%.svg"
+            ],
+            "env": {}
+        }
+    ],
+    "latex-workshop.latex.autoBuild.run": "never",
+    "workbench.editor.untitled.hint": "hidden",
+    "latex-workshop.view.pdf.viewer": "tab"
 }
